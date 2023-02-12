@@ -1,0 +1,220 @@
+html, body {
+  padding-top: 80px;
+  height: 100%;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: lightgray;
+}
+
+body.home {
+  background-image: url(droneImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  
+}
+
+img.left {
+  float: left;
+  width: 50%;
+  clear: both;
+  margin-right: 10px;
+}
+
+img.right {
+  float: right;
+  width: 50%;
+  clear: both;
+  margin-left: 10px;
+}
+
+.container img {
+  width: 50%;
+}
+
+
+
+.text {
+  flex: 2;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:10px;
+}
+
+.container-right {
+  float: right;
+  width: 200%;
+  clear: both;;
+  margin-top: 20%;
+}
+
+
+nav {
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+  z-index:1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  header img {
+    height: 30px;
+  }
+  align-items: center;
+  flex: 1;
+}
+
+body {
+  height: 125vh;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+main {
+  color: lightgray;
+}
+
+nav li {
+   margin: 0;
+  padding: 0 20px;
+}
+
+.blurb {
+  margin-top: 80px; 
+  background-color: rgba(211, 211, 211, 0.7);
+  font-size: larger;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  line-height: 2;
+  transform: translate(-50%, -50%);
+  font-family: Georgia;
+}
+
+
+nav a {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  height: 100%;
+  padding: 0 20px; 
+}
+
+img.all {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
+
+img.logo {
+  width: 13%;
+  height: 100%;
+    margin-left: auto;
+}
+header * {
+    display: inline;
+}
+
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 10px; /* Gap between images */
+}
+
+.gallery img {
+  max-width: 100%;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gallery img {
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
